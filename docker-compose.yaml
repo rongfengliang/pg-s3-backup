@@ -9,7 +9,7 @@ services:
     volumes:
     - ./db_data:/var/lib/postgresql/data
   backup:
-    image: dalongrong/pg-dump
+    image: dalongrong/pg-dump-gzip
     environment: 
     - "PG_HOST=postgres"
     - "PG_DB=postgres"
